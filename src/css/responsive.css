@@ -1,0 +1,70 @@
+/* 1. Ajuste Geral: Garantir respiro em todas as telas */
+.container, #modal-mensagem {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 15px;
+    width: 90%; 
+    max-width: 500px; 
+}
+
+/* 2. Tablets e dispositivos médios (até 768px) */
+@media (max-width: 768px) {
+    h2 { font-size: 1.4rem; }
+    .video-container { width: 100%; height: auto; }
+}
+
+/* 3. Celulares grandes (até 600px) */
+@media (max-width: 600px) {
+    .container, #modal-mensagem {
+        width: 92%;
+        padding: 12px;
+    }
+    h2 { font-size: 1.3rem; }
+}
+
+/* 4. Celulares padrão/pequenos (até 480px) */
+@media (max-width: 480px) {
+    .container, #modal-mensagem {
+        width: 94%; 
+        padding: 10px;
+        margin: 5px auto;
+    }
+    h2 { font-size: 1.1rem; }
+    
+    .codigo-hacker { 
+        font-size: 0.8rem; 
+        max-height: 100px;
+        overflow-y: auto;
+    }
+    
+    /* Melhoria nos botões para não vazar texto */
+    .btn-desbloquear-portal, .btn-decodificar-mensagem {
+        white-space: normal;
+        word-wrap: break-word;
+        padding: 10px 5px;
+        font-size: 0.85rem;
+        line-height: 1.2;
+    }
+}
+
+/* 5. Celulares muito estreitos (abaixo de 360px) */
+@media (max-width: 360px) {
+    .container, #modal-mensagem {
+        width: 96%;
+        padding: 8px;
+    }
+    .codigo-hacker, #modal-mensagem p {
+        font-size: 0.9rem;
+    }
+    .btn-desbloquear-portal, 
+    .btn-decodificar-mensagem {
+        font-size: 0.8rem;
+    }
+}
+
+/* Isso só vai valer quando o celular estiver deitado */
+@media screen and (orientation: landscape) {
+    body {
+        overflow-y: auto !important; /* Libera a rolagem só agora */
+    }
+}

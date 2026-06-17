@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+
+  <title>Cifra do Amor ❤️</title>
+</head>
+
+<body>
+
+  <!-- Canvas para a chuva de corações estilo Matrix -->
+  <div class="container-canvas">
+    <canvas id="MatrixCanvas"></canvas>
+  </div>
+
+  <div id="telaPreta">
+    <p id="textoDigitado"></p>
+     <button id="btnIniciar">Autenticar Acesso</button>
+  </div>
+  <div id="seu-conteudo"></div>
+
+  <section>
+    <div id="telaMensagem" class="container cards">
+
+      <h2 class="brilho-neon">Cifra do Amor ❤️</h2>
+
+      <div class="video-container card-mensagem">
+        <video width="100%" controls>
+          <source src="./src/assets/video_cifra.mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div>
+
+      <div id="modal-mensagem"
+        style="display: none; background: #1a1a1a; padding: 25px; border: 2px solid #00ffcc; border-radius: 15px; margin-top: 20px; color: #fff; text-align: center; max-width: 400px; margin-left: auto; margin-right: auto;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);">
+
+        <h3 style="color: #00ffcc; margin-top: 0;">Mensagem Decifrada ✨</h3>
+
+        <p id="textoCriptografado" class="codigo-hacker">
+          LDT  ZLNQ UHUDQ  BNL UNBD  D BNLN UHUDQ DL  TL   KHUQN  CD  QNLZMBD  
+          ZPTDKZ  GHRSNQHZ  CD  BNLDCHZ  QNLZMSHBZ  PTD  SNCN  LTMCN RNMGZ  DL  UHUDQ 
+          UNBD LD DMRHMNT PTD SNCNR  NR  MNRRNR CHZR RZN  CHFMNR  CD BNLDLNQZBNDR MN MNRRN BZKDMCZQHN SNCN CHZ D DRODBHZK
+          MNR ZLZLNR  MNR  CHUDQSHLNR  ITMSNR ZSD LDRLN PTZMCN RN  DRSZLNR
+          INFZMCN  BNMUDQRZ ENQZ  QHMCN CD UZQHZR  ANADHQZR  PTD RN Z FDMSD  DMSDMCD
+          OZQSHKGZQ  Z  UHCZ  BNMSHFN  D  DWSQDLZLDMSD  LZQZUHKGNRN
+          BNL  UNBD STCN  EHBZ  LZHR  KDUD LZHR ONRRHUDK UNBD  MZN  D ZODMZR  N  LDT  LZQHCN 
+          LZR RHL  N  LDT LDKGNQ ZLHFN UNBD  D  Z  OQNUZ  PTD OQHMBHODR DMBZMSZCNR  DWHRSDL RTZ  OZQBDQHZ    D  N  RDT  ZLNQ RZN  NR
+          LDTR  BNLATRSHUDHR  OZQZ  UDQ  Z  UHCZ  ZHMCZ  LZHR  ANMHSZ DT ZLN  SD  ZLZQ 
+          NAQHFZCZ  ONQ LD ZLZQ SZLADL 
+          NAQHFZCZ  ONQ   LD  EZYDQ  EDKHY  DT  SD  ZLN LTHSN  LDT FDMSKDLZM
+          LDT  OQDSN  KHMCN LDT FQZMCD ZLNQ 
+     </p>
+
+        <audio id="som-matrix" src="src/assets/bip.mp3.aac"></audio>
+
+        <div class="botoes-modal" style="margin-top: 25px; display: flex; flex-direction: column; gap: 12px;">
+          <button id="btn-guardar" class="holograma-coraçao"
+            style="padding: 12px; cursor: pointer; background: #ff1493; color: white; border: none; border-radius: 8px; font-weight: bold; transition: 0.3s;">
+            Guardar mensagem no coração ❤️ e voltar para a página inicial
+          </button>
+
+          <button
+            onclick="document.getElementById('modal-mensagem').style.display='none'; window.location.href='index.html';"
+            style="padding: 12px; cursor: pointer; background: #444; color: white; border: none; border-radius: 8px; transition: 0.3s;">
+            Fechar mensagem e voltar para a página inicial
+          </button>
+        </div>
+      </div>
+
+      <button type="button" class="btn-decodificar-mensagem" onclick="decodificarMensagem()" style="margin-top: 20px;">
+        Decodificar Mensagem
+      </button>
+
+      <footer>
+        <p>&copy; 2026 - Desenvolvido por Raquel Borges</p>
+      </footer>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <script src="./src/js/script.js"></script>
+
+</body>
+
+</html>

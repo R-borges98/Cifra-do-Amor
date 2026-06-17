@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+    
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <title>Cifra do Amor ❤️</title>
+</head>
+
+<body>
+    <!-- Canvas para a chuva de corações estilo Matrix -->
+    <canvas id="MatrixCanvas"></canvas>
+
+    <!-- O seu main agora é o seu único container de centralização -->
+    <main class="container cards " id="telaLogin">
+        <h2>Acesso Restrito 🔒</h2>
+        <p class="dica">💡<strong>Dica:</strong>É um livro que me fez amar ainda mais a tecnologia.</p>
+
+        <div class="caixa-senha">
+            <input type="password" id="inputSenha" placeholder="Digite o nome do livro..." autocomplete="off">
+            <button type="button" id="btnOlhinho" class="btn-toggle-senha" onclick="alternarVisualizacaoSenha()">🔒</button>
+        </div>
+        <button class="btn-desbloquear-portal" onclick="verificarSenha()">Desbloquear Portal</button>
+    </main>
+
+
+
+
+    
+    <script src="./src/js/script.js"></script>
+
+</body>
+</html>
